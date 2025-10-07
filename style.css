@@ -1,0 +1,106 @@
+nav {
+    display: flex;                 /* aktivuje flexbox */
+    justify-content: space-between; /* rozdělí obsah mezi kraje */
+    align-items: center;            /* zarovná na střed vertikálně */
+    padding: 1rem 2rem;             /* vnitřní okraje – dýchá to */
+    background-color: #f9f6f2;      /* světlé pozadí jako na obrázku */
+    border-bottom: 1px solid #ddd;  /* jemná linka dole */
+}
+.nav-links {
+    display: flex;          /* srovná li do řádku */
+    list-style: none;       /* odstraní tečky */
+    gap: 2rem;              /* mezery mezi položkami */
+}
+
+.nav-links a {
+    text-decoration: none;  /* odstraní podtržení */
+    color: black;           /* barva textu */
+    font-weight: 500;       /* trochu zvýrazní */
+}
+.right-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;             /* mezera mezi textem a obrázkem */
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.profile-img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;      /* udělá z obrázku kolečko */
+}
+
+
+
+
+
+
+
+
+
+
+
+main {
+    /* MY OG CSS OF MAIN */
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: #fff;
+    color: #000;
+
+
+    /* CSS THAT I HAD TO PUT SO GRID SPLIT IT ON RIGHT AND LEFT SIDE */
+    display: grid; /* aktivuje grid layout */
+    grid-template-columns: 1fr 1fr; /* rozdělí na 2 stejné sloupce */
+    align-items: center; /* vertikální zarovnání */
+    min-height: 80vh; /* nech to vyplnit většinu stránky */
+    padding: 2rem 4rem;
+    gap: 2rem; /* mezera mezi sloupci */
+}
+.left-side {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+
+.main-title {
+    justify-content: right;
+}
+
+.main-title h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+.title-description p {
+    font-size: 1.2rem;
+    color: #000000;
+    max-width: 500px;
+}
+
+.social-icons a {
+    margin-right: 1rem;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.stats {
+    display: flex;
+    gap: 2rem;
+}
+
+
+
+
+
+
+
+
+
+.right-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
