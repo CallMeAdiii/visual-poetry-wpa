@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+
+
+
 nav {
     display: flex;                 /* aktivuje flexbox */
     justify-content: space-between; /* rozdělí obsah mezi kraje */
@@ -30,6 +34,11 @@ nav {
     height: 32px;
     border-radius: 50%;      /* udělá z obrázku kolečko */
 }
+.logo img {
+    width: 60px;
+    height: 60px;
+
+}
 
 
 
@@ -59,14 +68,16 @@ main {
 
 
 .main-title {
-    justify-items: center;
+    justify-items: end;
+    text-align: end;
+
 }
 
 .main-title h1 {
     font-size: 5rem;
     letter-spacing: 2px;
-    font-family: Montreal, sans-serif;
-    font-weight: ;
+    font-family: "Zalando Sans";
+    font-weight: bold;
 
 }
 
@@ -75,13 +86,29 @@ main {
     font-size: 1.2rem;
     color: #000000;
     max-width: 500px;
+    justify-items: end;
+    justify-self: end;
+    text-align: end;
+
 }
 
+.social-icons li {}
 .social-icons a {
-    margin-right: 1rem;
+    width: 3rem;
+    height: 3rem;
+    margin-right: -0.5rem;
     text-decoration: none;
     color: black;
-    font-weight: bold;
+    border: 1px black solid;
+    border-radius: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.social-icons{
+    display: flex;
 }
 
 .stats {
