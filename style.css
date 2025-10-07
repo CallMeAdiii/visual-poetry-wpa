@@ -42,17 +42,11 @@ nav {
 
 
 main {
-    /* MY OG CSS OF MAIN */
-    flex-direction: column;
-    margin: 0 auto;
     background-color: #fff;
     color: #000;
-
-
     /* CSS THAT I HAD TO PUT SO GRID SPLIT IT ON RIGHT AND LEFT SIDE */
     display: grid; /* aktivuje grid layout */
     grid-template-columns: 1fr 1fr; /* rozdělí na 2 stejné sloupce */
-    align-items: center; /* vertikální zarovnání */
     min-height: 80vh; /* nech to vyplnit většinu stránky */
     padding: 2rem 4rem;
     gap: 2rem; /* mezera mezi sloupci */
@@ -65,13 +59,17 @@ main {
 
 
 .main-title {
-    justify-content: right;
+    justify-items: center;
 }
 
 .main-title h1 {
-    font-size: 3rem;
+    font-size: 5rem;
     letter-spacing: 2px;
+    font-family: Montreal, sans-serif;
+    font-weight: ;
+
 }
+
 
 .title-description p {
     font-size: 1.2rem;
