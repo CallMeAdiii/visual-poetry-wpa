@@ -240,40 +240,73 @@ main {
 
 
 
-.about{
-    background: black;
+.about {
+    background: #020202;
+    position: relative;
 }
 
-.aboutimg{
+.aboutimg {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.guyphoto {
     width: 1000px;
     height: auto;
-    justify-content: center;
-    align-items: center;
-    justify-self: center;
-    display: flex;
-
 }
 
-.about-title{
-    justify-self: center;
-    font-size: 180px;
+.about-title {
+    font-size: 162px;
     color: #ffffff;
     margin-top: 80px;
     line-height: 0.2;
     margin-left: 30px;
+    font-family: "Poppins ExtraBold", serif;
     text-wrap: nowrap;
-    font-family: "Zalando Sans";
 }
+
+
 .pics-column {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    left: 10px;
+    top: 100px;
+    gap: 10px;
+}
+
+.pics-column img {
+    width: 160px;
+    height: auto;
+}
+
+.right-pics-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    right: 5px;
+    top: 100px;
+    gap: 10px;
+}
+
+.right-pics-column img {
+    width: 160px;
+    height: auto;
+}
 
 
-    img {
-        width: 200px;
-        height: 200px;
-        justify-self: center;
-        align-self: center;
-        justify-content: center;
-    }
+.target1{
+    margin-bottom: 180px;
+}
+
+.cross{
+
+    margin-bottom: 180px;
+    margin-left: 30px;
+}
+.cross2{
+    margin-bottom: 180px;
+    margin-right: -30px;
 }
