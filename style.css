@@ -1,19 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap');
 
+html {
+}
+body {
+    font-family: 'Zalando Sans', sans-serif;
+    margin: 0;
+    padding-bottom: 0;
+}
 
 nav {
-    display: flex;                 /* aktivuje flexbox */
-    justify-content: space-between; /* rozdělí obsah mezi kraje */
-    align-items: center;            /* zarovná na střed vertikálně */
-    padding: 1rem 2rem;             /* vnitřní okraje – dýchá to */
-    background-color: #f9f6f2;      /* světlé pozadí jako na obrázku */
-    border-bottom: 1px solid #ddd;  /* jemná linka dole */
+    font-size: 1.3rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.1rem 1rem;
+    background-color: #f9f6f2;
+    border-bottom: 1px solid #ddd;
 }
 .nav-links {
-    display: flex;          /* srovná li do řádku */
-    list-style: none;       /* odstraní tečky */
-    gap: 2rem;              /* mezery mezi položkami */
+    display: flex;
+    list-style: none;
+    gap: 2rem;
 }
 
 .nav-links a {
@@ -35,8 +45,8 @@ nav {
     border-radius: 50%;      /* udělá z obrázku kolečko */
 }
 .logo img {
-    width: 60px;
-    height: 60px;
+    width: 10rem;
+    height: 10rem;
 
 }
 
@@ -74,11 +84,12 @@ main {
 }
 
 .main-title h1 {
-    font-size: 5rem;
-    letter-spacing: 2px;
+    font-size: 15rem;
+    letter-spacing: 1px;
     font-family: "Zalando Sans";
     font-weight: bold;
-
+    margin: 0;;
+    line-height: 11rem;
 }
 
 
@@ -111,21 +122,135 @@ main {
     display: flex;
 }
 
+.social-divider {
+        color: black;
+        width: 100%;
+        flex: 1;
+        height: 0.1px;
+        margin: auto 0 auto 1rem;
+    }
 .stats {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
+    h2 {
+        display: flex;
+        font-size: 4rem;
+        span {
+            display: flex;
+            margin-bottom: auto;
+            font-size: 2rem;
+        }
+    }
+}
+.left-stats {
+    justify-items: end;
+    text-align: end;
+        h1 {
+            font-style: italic;
+        }
+}
+
+.right-stats {
+    justify-items: end;
+    text-align: end;
+        h1 {
+            font-style: italic;
+        }
+
 }
 
 
 
-
-
-
-
-
-
-.right-side {
+/*noinspection CssInvalidPropertyValue*/
+.hero-man-picture {
+    position: relative;
+    width: 800px;
+    height: 800px;
+    background: linear-gradient(to right, #f4b553, #ed9b22);
+    clip-path: path('M 57.14 0 L 605.71 0 A 68.57 68.57 0 0 1 674.29 68.57 L 674.29 68.57 A 57.14 57.14 0 0 0 731.43 125.71 A 68.57 68.57 0 0 1 800 194.29 L 800 708.57 A 91.43 91.43 0 0 1 708.57 800 L 217.14 800 A 91.43 91.43 0 0 1 125.71 708.57 L 125.71 560 A 57.14 57.14 0 0 0 68.57 502.86 A 68.57 68.57 0 0 1 0 422.86 L 0 91.43 A 91.43 91.43 0 0 1 91.43 0 Z');
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.hero-man-picture img{
+    width: 30rem;
+    height: 40rem;
+    justify-self: end;
+    align-self: end;
+    align-content: end;
+}
+.hero-man-picture h2 {
+    font-family: "Great Vibes";
+    font-weight: lighter;
+    font-size: 6rem;
+    color: white;
+    align-self: top;
+    align-content: top;
+    position: absolute;
+    top: 0.1rem;
+    left: 3rem;
+}
+
+.mini1{
+    width: 120px;
+    height: auto;
+
+
+}
+
+.mini2{
+    width: 120px;
+    height: auto;
+    position: absolute;
+    top: 0;
+
+
+}
+
+.mini3{
+    width: 120px;
+    height: auto;
+    position: absolute;
+    top: 180px;
+    right: -10px;
+}
+
+.mini-pictures{
+    position: absolute;
+    top: 710px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-right: 750px;
+
+}
+.upper-mini{
+    position: absolute;
+    top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-left: 660px;
+}
+
+
+
+.about {
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+
+}
+.about-text {
+    text-wrap: nowrap;
+    font-size: 7.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+
 }
