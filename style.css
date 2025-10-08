@@ -28,14 +28,14 @@ nav {
 }
 
 .nav-links a {
-    text-decoration: none;  /* odstraní podtržení */
-    color: black;           /* barva textu */
-    font-weight: 500;       /* trochu zvýrazní */
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
 }
 .right-info {
     display: flex;
     align-items: center;
-    gap: 0.5rem;             /* mezera mezi textem a obrázkem */
+    gap: 0.5rem;
     font-size: 0.9rem;
     color: #333;
 }
@@ -43,7 +43,7 @@ nav {
 .profile-img {
     width: 32px;
     height: 32px;
-    border-radius: 50%;      /* udělá z obrázku kolečko */
+    border-radius: 50%;
 }
 .logo img {
     width: 10rem;
@@ -54,22 +54,14 @@ nav {
 
 
 
-
-
-
-
-
-
-
 main {
     background-color: #fff;
     color: #000;
-    /* CSS THAT I HAD TO PUT SO GRID SPLIT IT ON RIGHT AND LEFT SIDE */
-    display: grid; /* aktivuje grid layout */
-    grid-template-columns: 1fr 1fr; /* rozdělí na 2 stejné sloupce */
-    min-height: 80vh; /* nech to vyplnit většinu stránky */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 80vh;
     padding: 2rem 4rem;
-    gap: 2rem; /* mezera mezi sloupci */
+    gap: 2rem;
 }
 .left-side {
     display: flex;
@@ -162,7 +154,6 @@ main {
 
 
 
-/*noinspection CssInvalidPropertyValue*/
 .hero-man-picture {
     position: relative;
     width: 800px;
